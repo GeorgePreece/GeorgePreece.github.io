@@ -1,0 +1,47 @@
+:root {
+    /* all:unset; */
+    scroll-behavior:smooth;
+    --spacingSize:16px;
+}
+
+/* Structure */
+html, body { min-height:100%;height:100% }
+body { width:100%;max-width:1024px;margin:auto;
+    display:flex;flex-direction:column }
+main { flex:1;display:flex;flex-wrap:wrap-reverse }
+main > section:first-child { flex:1.618 474px }
+main > section:last-child  { flex:1.000 293px }
+
+/* Defaults */
+html { font:medium"CMU Serif";color:#333;background:#EEE }
+h1,h2,h3,h4,h5,h6 { font-weight:normal;margin:0 }
+ol, ul { padding:0;margin:0 }
+address { font-style:normal }
+code { background:#DDD;font:medium"CMU Typewriter Text";padding:0 2px }
+pre > code { display:block;padding:var(--spacingSize);border-left:thick solid #CCC }
+
+/* Utilities */
+.list-inline { display:inline;font-size:0 }
+.list-inline > li { display:inline;font-size:medium }
+.list-inline > li + li::before { content:"\00A0" }
+.list-inline.list-comma > li + li::before { content:", " }
+
+.link { color:#666;transition:color 250ms }
+.link:hover { color:#000 }
+
+.margin-all  { margin:var(--spacingSize) }
+.margin-vert { margin-top:var(--spacingSize);margin-bottom:var(--spacingSize) }
+.margin-horz { margin-left:var(--spacingSize);margin-right:var(--spacingSize) }
+
+.padding-all  { padding:var(--spacingSize) }
+.padding-vert { padding-top:var(--spacingSize);padding-bottom:var(--spacingSize) }
+.padding-horz { padding-left:var(--spacingSize);padding-right:var(--spacingSize) }
+
+.text-left   { text-align:left }
+.text-center { text-align:center }
+.text-right  { text-align:right }
+
+.icon-date::before  { content:"\1F4C5";font-size:medium }
+.icon-label::before { content:"\1F3F7";font-size:medium }
+
+.toc ol, .toc ul { list-style-type:none;padding-inline-start:20px }

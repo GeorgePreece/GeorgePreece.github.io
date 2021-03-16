@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ page.title }} | {{ site.title }}</title>
+        <meta name="description" content="{{ site.description }}">
+
+        <link href="/images/favicon.svg" rel="icon" type="image/svg+xml" sizes="any">
+        <link href="/styles/fonts.css" rel="stylesheet" type="text/css">
+        <link href="/styles/common.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        {% include header.html %}
+
+        <main class="golden">
+            {{ content }}
+        </main>
+
+        {% include footer.html %}
+    </body>
+</html>

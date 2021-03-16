@@ -1,1 +1,39 @@
-Hello, World
+---
+layout: "default"
+title:  "Home"
+---
+<section>
+    <ol class="margin-horz" style="list-style-type:none">
+        {% for post in site.posts %}
+            <li class="padding-vert">
+                <article>
+                    <h1><a class="link" href="{{ post.url }}">{{ post.title }}</a></h1>
+                    <time class="icon-date" datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
+                    <ul class="icon-label list-inline list-comma">
+                        {% for tag in post.tags %}
+                            <li>{{ tag }}</li>
+                        {% endfor %}
+                    </ul>
+                </article>
+            </li>
+        {% endfor %}
+    </ol>
+</section>
+<section>
+    <header class="text-center margin-vert">
+        <img src="images/avatar.jpeg" height="128" 
+            style="border-radius:var(--spacingSize);box-shadow:0 0 4px #3333" />
+    </header>
+
+    <div class="margin-horz">
+        <address class="text-center margin-vert">
+            <small>
+                <a class="link" href="https://github.com/georgepreece">github.com/georgepreece</a>
+                <br />
+                <a class="link" href="https://linkedin.com/in/georgepreece">linkedin.com/in/georgepreece</a>
+            </small>
+        </address>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et dui condimentum, imperdiet justo vitae, pharetra mi. Mauris varius sed mi eu ultrices. Mauris eget mi nisl. Maecenas blandit est rutrum massa pretium tristique. Aliquam pretium ex ac dictum pharetra.</p>
+    </div>
+</section>
