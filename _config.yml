@@ -1,2 +1,14 @@
-title:       "George Preece"
+title: "George Preece"
 description: "A blog on software architecture, development and security"
+links:
+  - GitHub:
+    label: "github.com/georgepreece"
+    value: "https://github.com/georgepreece"
+  - LinkedIn:
+    label: "linkedin.com/in/georgepreece"
+    value: "https://linkedin.com/in/georgepreece"
+biography: >
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et dui 
+  condimentum, imperdiet justo vitae, pharetra mi. Mauris varius sed mi eu 
+  ultrices. Mauris eget mi nisl. Maecenas blandit est rutrum massa pretium 
+  tristique. Aliquam pretium ex ac dictum pharetra.
