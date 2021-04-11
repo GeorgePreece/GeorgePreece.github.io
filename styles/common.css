@@ -15,8 +15,8 @@ html { font:medium"CMU Serif";color:#333;background:#EEE }
 h1,h2,h3,h4,h5,h6 { font-weight:normal;margin:0;color:#000 }
 ol, ul { padding:0;margin:0 }
 address { font-style:normal }
-code { background:#DDD;font:medium"CMU Typewriter Text";padding:0 2px }
-pre > code { display:block;padding:var(--spacingSize);border-left:thick solid #CCC }
+code { background:#DDD;font:small"CMU Typewriter Text";padding:0 2px }
+pre > code { display:block;white-space:pre-wrap;padding:var(--spacingSize);border-left:thick solid #CCC }
 
 /* Utilities */
 .list-inline { display:inline;font-size:0 }
@@ -35,9 +35,10 @@ pre > code { display:block;padding:var(--spacingSize);border-left:thick solid #C
 .padding-vert { padding-top:var(--spacingSize);padding-bottom:var(--spacingSize) }
 .padding-horz { padding-left:var(--spacingSize);padding-right:var(--spacingSize) }
 
-.text-left   { text-align:left }
-.text-center { text-align:center }
-.text-right  { text-align:right }
+.text-left    { text-align:left }
+.text-center  { text-align:center }
+.text-right   { text-align:right }
+.text-justify { text-align:justify }
 
 .icon-date::before  { content:"\1F4C5";font-size:medium }
 .icon-label::before { content:"\1F3F7";font-size:medium }
