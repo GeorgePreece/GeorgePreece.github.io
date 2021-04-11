@@ -1,5 +1,14 @@
 :root {
     --spacingSize:16px;
+
+    --colorBackground:#EEE;
+    --colorCodeBackground:#DDD;
+    --colorCodeBorder:#CCC;
+
+    --colorTextHeading:#000;
+    --colorTextDefault:#333;
+    --colorTextLink:#666;
+    --colorTextLinkHover:#000;
 }
 
 /* Structure */
@@ -11,12 +20,12 @@ main > section:first-child { flex:1.618 474px }
 main > section:last-child  { flex:1.000 293px }
 
 /* Defaults */
-html { font:medium"CMU Serif";color:#333;background:#EEE }
-h1,h2,h3,h4,h5,h6 { font-weight:normal;margin:0;color:#000 }
+html { font:medium"CMU Serif";color:var(--colorTextDefault);background:var(--colorBackground) }
+h1,h2,h3,h4,h5,h6 { font-weight:normal;margin:0;color:var(--colorTextHeading) }
 ol, ul { padding:0;margin:0 }
 address { font-style:normal }
-code { background:#DDD;font:small"CMU Typewriter Text";padding:0 2px }
-pre > code { display:block;white-space:pre-wrap;padding:var(--spacingSize);border-left:thick solid #CCC }
+code { background:var(--colorCodeBackground);font:small"CMU Typewriter Text";padding:0 2px }
+pre > code { display:block;padding:var(--spacingSize);border-left:thick solid var(--colorCodeBorder) }
 
 /* Utilities */
 .list-inline { display:inline;font-size:0 }
@@ -24,8 +33,8 @@ pre > code { display:block;white-space:pre-wrap;padding:var(--spacingSize);borde
 .list-inline > li + li::before { content:"\00A0" }
 .list-inline.list-comma > li + li::before { content:", " }
 
-.link { color:#666;transition:color 250ms }
-.link:hover { color:#000 }
+.link { color:var(--colorTextLink);transition:color 250ms }
+.link:hover { color:var(--colorTextLinkHover) }
 
 .margin-all  { margin:var(--spacingSize) }
 .margin-vert { margin-top:var(--spacingSize);margin-bottom:var(--spacingSize) }

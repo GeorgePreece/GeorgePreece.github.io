@@ -1,0 +1,10 @@
+:root {
+    --colorBackground:#333;
+    --colorCodeBackground:#222;
+    --colorCodeBorder:#444;
+
+    --colorTextHeading:#FFF;
+    --colorTextDefault:#EEE;
+    --colorTextLink:#CCC;
+    --colorTextLinkHover:#FFF;
+}
