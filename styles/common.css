@@ -26,15 +26,14 @@ ol, ul { padding:0;margin:0 }
 address { font-style:normal }
 code { background:var(--colorCodeBackground);font:small"CMU Typewriter Text";padding:0 2px }
 pre > code { display:block;padding:var(--spacingSize);border-left:thick solid var(--colorCodeBorder) }
+a { color:var(--colorTextLink);transition:color 250ms }
+a:hover { color:var(--colorTextLinkHover) }
 
 /* Utilities */
 .list-inline { display:inline;font-size:0 }
 .list-inline > li { display:inline;font-size:medium }
 .list-inline > li + li::before { content:"\00A0" }
 .list-inline.list-comma > li + li::before { content:", " }
-
-.link { color:var(--colorTextLink);transition:color 250ms }
-.link:hover { color:var(--colorTextLinkHover) }
 
 .margin-all  { margin:var(--spacingSize) }
 .margin-vert { margin-top:var(--spacingSize);margin-bottom:var(--spacingSize) }
