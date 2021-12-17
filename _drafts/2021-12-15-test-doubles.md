@@ -22,3 +22,15 @@ In the above example, the argument `amount` is the direct input and the return v
 
 ## Variations
 Test doubles come in different flavours, each bringing their own uses and benefits to the table. You can think of "double" as a generic/umbrella term for the different types of variations. The five most notable named variations are _stubs_, _spies_, _mocks_ and _fakes_.
+
+### Test Stub
+Test stubs allow us to control the indirect inputs of a test. Essentially, any API requests made to a test stub are met with a pre-programmed response allowing us to exercise untested code paths.
+
+### Test Spy
+Test spies allow us to verify the indirect outputs of a test. They record API calls which can be used at the end of the test to verify untested requirements. Spies can be a very powerful tool to test legacy code as they do not alter the behaviour of the code unit.
+
+### Mock Object
+Mock objects are a powerful variation of test doubles as they allow us to both control indirect input and verify indirect outputs. At the beginning of the test, we pre-programme the mock object with responses (similar to stubs) and any expected requests such as the method name, arguments and invocation count. If the mock receives any unexpected requests, then the test will fail.
+
+### Fake Object
+Fake objects are used to substitute are unavailable, or cause slow tests. They are lightweight implementations providing the same functionality as the original code unit. A common example is to replace a disk-based data store with an in-memory one. This in-memory database wouldn't provide characteristics such as scalability but would improve the speed of tests.
