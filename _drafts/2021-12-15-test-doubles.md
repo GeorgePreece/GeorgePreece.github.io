@@ -10,7 +10,7 @@ When writing tests, we often find ourselves in a situation where the code unit w
 ## Direct and Indirect I/O
 To understand the power of test doubles, you first need to understand the difference between direct and indirect input/output. 
 
-**Direct I/O** can be summarised as the immediate data communicated with the code unit. So, direct input is the data we _send_ to the code unit (typically in the form of arguments), whereas direct output is the data we _receive_ (typically in the form of a return value). 
+**Direct I/O** can be summarised as the immediate data communicated with the code unit. So, direct input is the data we _send_ to the code unit (typically in the form of arguments), whereas, direct output is the data we _receive_ (typically in the form of a return value). 
 
 **Indirect I/O**, on the other hand, is the data communicated with a _dependency_ of the code unit. To illustrate this let's consider a <DESCRIBE EXAMPLE HERE>: 
 
