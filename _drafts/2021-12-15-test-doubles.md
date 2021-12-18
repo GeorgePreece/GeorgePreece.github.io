@@ -21,7 +21,7 @@ TO-DO: Write code example
 In the above example, the argument `amount` is the direct input and the return value `result` is the direct output. There is, however, more data being _indirectly input_ in the form of `foo`. This is important because, if uncontrolled, our test can produce inconsistent results simply because of the current week day. If we were able to control this input, we could test both code paths in a consistent manner. We also have data being _indirectly output_ from the unit (`bar`). If we do not have an observation point to this, then we are usually left with untested requirements.
 
 ## Variations
-Test doubles come in different flavours, each bringing their own uses and benefits to the table. You can think of "double" as a generic/umbrella term for the different types of variations. The five most notable named variations are _stubs_, _spies_, _mocks_ and _fakes_.
+Test doubles come in different flavours, each bringing their own uses and benefits to the table. You can think of "double" as a generic/umbrella term for the different types of variations. The five most notable named variations are [_stubs_](#test-stub), [_spies_](#test-spy), [_mocks_](#mock-object) and [_fakes_](#fake-object).
 
 ### Test Stub
 Test stubs allow us to control the indirect inputs of a test. Essentially, any API requests made to a test stub are met with a pre-programmed response allowing us to exercise previously untested code paths.
