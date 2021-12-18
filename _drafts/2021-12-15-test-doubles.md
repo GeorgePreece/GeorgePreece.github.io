@@ -12,16 +12,26 @@ To understand the power of test doubles, you first need to understand the differ
 
 **Direct I/O** can be summarised as the immediate data communicated with the code unit. So, direct input is the data we _send_ to the code unit (typically in the form of arguments), whereas, direct output is the data we _receive_ (typically in the form of a return value). 
 
-**Indirect I/O**, on the other hand, is the data communicated with a _dependency_ of the code unit. To illustrate this let's consider a <DESCRIBE EXAMPLE HERE>: 
+**Indirect I/O**, on the other hand, is the data communicated with a _dependency_ of the code unit. To illustrate this let's consider the below example of a simple discount calculator. There is a weekly discount every Tuesday where a 50% reduction is applied. Further reductions can be applied if a valid voucher code has been presented.
 
 ```
-TO-DO: Write code example
+calculateDiscount(amount : Currency, voucherCode : String) : Currency {
+    result = amount;
+
+    if(Date.getWeekday() == Date.TUESDAY) {
+        result *= 0.50;
+    }
+
+    if(voucherCode != null) {
+        result = voucherService.applyReduction(voucherCode, result);
+    }
+}
 ```
 
-In the above example, the argument `amount` is the direct input and the return value `result` is the direct output. There is, however, more data being _indirectly input_ in the form of `foo`. This is important because, if uncontrolled, our test can produce inconsistent results simply because of the current weekday. If we were able to control this input, we could consistently test both code paths. We also have data being _indirectly output_ from the unit (`bar`). If we do not have an observation point to this, then we are usually left with untested requirements.
+In the above example, the arguments `amount` and `voucherCode` are direct inputs and the variable `result` is the direct output. There is, however, more data being _indirectly input_ in the form of `Date.getWeekday()`. This is important because, if uncontrolled, our test can produce inconsistent results simply because of the current weekday. If we were able to control this input, we could consistently test both code paths. We also have data being _indirectly output_ from the unit when the value of `result` is sent to `voucherService`. If we do not have an observation point to this, then we are usually left with untested requirements.
 
 ## Variations
-Test doubles come in different flavours, each bringing their distinct uses and benefits to the table. You can think of "double" as a generic/umbrella term for the different types of variations. The five most notable named variations are [_stubs_](#test-stub), [_spies_](#test-spy), [_mocks_](#mock-object), and [_fakes_](#fake-object).
+Test doubles come in different flavours, each bringing its distinct uses and benefits to the table. You can think of "double" as a generic/umbrella term for the different types of variations. The five most notable named variations are [_stubs_](#test-stub), [_spies_](#test-spy), [_mocks_](#mock-object), and [_fakes_](#fake-object).
 
 ### Test Stub
 Test stubs allow us to control the indirect inputs of a test. Essentially, any API requests made to a test stub are met with a pre-programmed response allowing us to exercise previously untested code paths.
