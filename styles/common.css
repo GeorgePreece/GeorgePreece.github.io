@@ -52,3 +52,7 @@ a:hover { color:var(--colorTextLinkHover) }
 .icon-label::before { content:"\1F3F7";font-size:medium }
 
 .toc ol, .toc ul { list-style-type:square;padding-inline-start:20px }
+
+@media screen and (min-width: 768px) {
+    .sidebar-content { position:sticky;top:0 }
+}
