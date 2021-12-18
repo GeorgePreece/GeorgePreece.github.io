@@ -24,7 +24,7 @@ ol, ul { padding:0;margin:0 }
 address { font-style:normal }
 code { background:var(--colorCodeBackground);font:small"CMU Typewriter Text";padding:0 2px }
 pre > code { display:block;padding:var(--spacingSize);border-left:thick solid var(--colorCodeBorder);
-    max-width:100vw;overflow:scroll }
+    overflow:scroll;max-width:calc(100vw - var(--spacingSize) - 8px) }
 a { color:var(--colorTextLink);transition:color 250ms }
 a:hover { color:var(--colorTextLinkHover) }
 
