@@ -25,7 +25,8 @@ h1,h2,h3,h4,h5,h6 { font-weight:normal;margin:0;color:var(--colorTextHeading) }
 ol, ul { padding:0;margin:0 }
 address { font-style:normal }
 code { background:var(--colorCodeBackground);font:small"CMU Typewriter Text";padding:0 2px }
-pre > code { display:block;padding:var(--spacingSize);border-left:thick solid var(--colorCodeBorder) }
+pre > code { display:block;padding:var(--spacingSize);border-left:thick solid var(--colorCodeBorder);
+    max-width:100vw;overflow:scroll }
 a { color:var(--colorTextLink);transition:color 250ms }
 a:hover { color:var(--colorTextLinkHover) }
 
