@@ -12,3 +12,4 @@ biography: >
   building enterprise applications. I started this blog to document and share
   what I have learned over the years and hope that you will find as much use
   reading my posts as I find writing them!
+permalink: /:title
