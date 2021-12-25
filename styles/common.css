@@ -25,6 +25,7 @@ address { font-style:normal }
 code { background:var(--colorCodeBackground);font:small"CMU Typewriter Text";padding:0 2px }
 pre { max-width:calc(100vw - 2 * var(--spacingSize)) }
 pre > code { display:block;padding:var(--spacingSize);border-left:thick solid var(--colorCodeBorder);overflow:scroll }
+pre > code::-webkit-scrollbar { width:0 }
 a { color:var(--colorTextLink);transition:color 250ms }
 a:hover { color:var(--colorTextLinkHover) }
 
