@@ -1,6 +1,11 @@
 ---
 layout: "article"
+
 title: "Test Doubles"
+description: >
+    Learn how to inject indirect inputs, verify indirect outputs and increase
+    test execution speed using test doubles
+author: "George Preece"
 category: article
 tags: development
 ---
