@@ -1,6 +1,7 @@
 ---
 layout: "article"
 title: "Test Doubles"
+category: article
 tags: development
 ---
 # {{ page.title }}
