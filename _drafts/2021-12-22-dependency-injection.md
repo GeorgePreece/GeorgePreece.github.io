@@ -22,7 +22,8 @@ Dependency Injection (DI) is a technique to apply an _inversion of control_, whe
 ```
 
 ## Injection Methods
-There are multiple methods in which the client can receive the service. The "standard" methods are [_Constructor Injection_](#constructor-injection), [_Setter Injection_](#setter-injection), and [_Interface Injection_](#interface-injection). I describe these as standard as they are typically supported out-of-the-box with object-oriented languages. Another common approach is to use reflection, a feature available in languages such as Java and C# that allows an application to introspect itself.
+In the previous diagram, the ambiguous term "inject" is used. This operation can happen in many different ways, but the three most common approaches are [_Constructor Injection_](#constructor-injection), [_Setter Injection_](#setter-injection), and [_Interface Injection_](#interface-injection). Another approach is through reflection, a feature available in languages such as Java and C# that allows an application to introspect itself.
 
 ### Constructor Injection
-
+### Setter Injection
+### Interface Injection
