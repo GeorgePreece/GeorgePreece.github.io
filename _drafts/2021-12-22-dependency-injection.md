@@ -12,9 +12,9 @@ Dependency Injection (DI) is a technique to apply an _inversion of control_, whe
 | :Injector |                                                       | :Client |
 +-----------+                                                       +---------+
       |                                                                  |
-     [ ]                         +-----------+                           |
-     [ ]--------------«create»-->| s:Service |                           |
-     [ ]                         +-----------+                           |
+     [ ]                        +------------+                           |
+     [ ]-------------«create»-->| s:IService |                           |
+     [ ]                        +------------+                           |
      [ ]                               |                                 |
      [ ]------------------------------------------------------inject s-->|
      [ ]                               |                                 |
@@ -26,6 +26,23 @@ In the previous diagram, the ambiguous term "inject" is used. This operation can
 
 ### Constructor Injection
 As the name implies, this method uses an object's constructor to deliver the dependency. Constructor injection is an excellent approach to forcing an injection; the injector **cannot** construct the client without the required dependencies. This method may be preferred if a dependency is mandatory for the client to function.
+
+The below example depicts a simple example of constructor injection:
+```
+class Application {
+    execute() : void {
+        new Client(new ServiceImpl());
+    }
+}
+
+class Client {
+    service : IService;
+
+    constructor(service : IService) {
+        this.service = service;
+    }
+}
+```
 
 ### Setter Injection
 ### Interface Injection
