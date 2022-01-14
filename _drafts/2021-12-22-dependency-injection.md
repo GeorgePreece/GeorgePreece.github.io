@@ -31,7 +31,10 @@ The below example depicts a simple example of constructor injection.
 ```
 class Application {
     execute() : void {
-        new Client(new ServiceImpl());
+        final Client client;
+
+        client = new Client(new ServiceImpl());
+        // Do something with client
     }
 }
 
