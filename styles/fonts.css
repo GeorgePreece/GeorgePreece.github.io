@@ -17,7 +17,7 @@
 
 @font-face { font-family:"CMU Serif";font-weight:400;font-style:normal;src:url("../fonts/cmunrm.ttf");font-display:swap }
 @font-face { font-family:"CMU Serif";font-weight:400;font-style:italic;src:url("../fonts/cmunti.ttf");font-display:swap }
-@font-face { font-family:"CMU Serif";font-weight:700;font-style:normal;src:url("../fonts/cmunbx.ttf");font-display:swap }
+@font-face { font-family:"CMU Serif";font-weight:700;font-style:normal;src:url("../fonts/cmunrb.pfb.ttf");font-display:swap }
 @font-face { font-family:"CMU Serif";font-weight:700;font-style:italic;src:url("../fonts/cmunbi.ttf");font-display:swap }
 
 @font-face { font-family:"CMU Typewriter Text";src:url("../fonts/cmuntt.ttf");font-display:swap }
