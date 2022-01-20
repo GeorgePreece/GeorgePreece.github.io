@@ -50,4 +50,24 @@ class Client {
 ### Setter Injection
 In contrast to constructor injection, Setter injection is helpful when a dependency is not required for the client to function. Adding optional dependencies to a constructor would add unnecessary clutter and is typically better suited in a setter method. 
 
+```
+class Application {
+    execute() : void {
+        final Client client;
+
+        client = new Client();
+        client.setService(new ServiceImpl());
+        // Do something with client
+    }
+}
+
+class Client {
+    service : IService;
+
+    setService(service : IService) {
+        this.service = service;
+    }
+}
+```
+
 ### Interface Injection
