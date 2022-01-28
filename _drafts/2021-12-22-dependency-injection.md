@@ -48,7 +48,7 @@ class Client {
 ```
 
 ### Setter Injection
-In contrast to constructor injection, Setter injection is helpful when a dependency is not required for the client to function. Adding optional dependencies to a constructor would add unnecessary clutter and is typically better suited in a setter method. 
+In contrast to constructor injection, setter injection helps inject dependencies that are optional or may change during the object's lifetime. Adding dependencies like these to a constructor would add unnecessary clutter and is typically better suited in a setter method.
 
 ```
 class Application {
