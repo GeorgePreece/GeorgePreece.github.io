@@ -1,6 +1,11 @@
 ---
 layout: "article"
+
 title: "Dependency Injection"
+description: >
+    Learn how to apply an inversion of control using dependency injection
+author: George Preece
+category: article
 tags: development
 ---
 # {{ page.title }}
