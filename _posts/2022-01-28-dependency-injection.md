@@ -10,7 +10,7 @@ tags: development
 ---
 # {{ page.title }}
 
-Dependency Injection (DI) is a technique to apply an _inversion of control_, where a client who wants to use a service should not create the service. Instead, an injector passes the service to the client. When used appropriately, DI comes with many benefits as it naturally lends itself towards the _separation of concerns_ design principle.
+Dependency Injection (DI) is a technique to apply an _inversion of control_, where a client who wants to use a service should not create it. Instead, an injector passes the service to the client. When used appropriately, DI comes with many benefits as it naturally lends itself towards the _separation of concerns_ design principle.
 
 ```
 +-----------+                                                       +---------+
