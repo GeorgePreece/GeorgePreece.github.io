@@ -14,11 +14,11 @@ tags: development
 Writing tests often leads us to a situation where two code units interact, making testing every logical path difficult or sometimes even impossible. Test doubles alleviate this by replacing the dependent code unit with a test-specific replacement. The replacement allows us to control indirect inputs, verify indirect outputs and even increase test execution speed. Gerard Meszaros coined the term "test double" in [XUnit Test Patterns: Refactoring Test Code](http://xunitpatterns.com/). Gerard described it as a stunt double; it appears the same as the real actor but does what we instruct it.
 
 ## Direct and Indirect I/O
-To make the most of test doubles, it is crucial to understand the difference between direct and indirect input/output.
+Making the most of test doubles requires understanding the difference between direct and indirect input/output.
 
-**Direct I/O** is the immediate data communicated with the code unit. That is, the data we _send_ to the code unit (typically in the form of arguments), whereas direct output is the data we _receive_ (typically in the form of a return value). 
+**Direct I/O** is the immediate data communicated with the unit of code. That is, the data we _send_ to the unit of code unit (typically in the form of arguments), whereas the direct output is the data we receive (typically in the form of a return value).
 
-**Indirect I/O**, on the other hand, is the data communicated with a dependency of the code unit. To illustrate this, let us consider the below example of a simple discount calculator. Every Tuesday, there is a weekly discount where a 50% reduction is applied. On top of that, presenting a valid voucher code applies a further reduction.
+**Indirect I/O**, on the other hand, is the data communicated with a dependency of the unit of code. To illustrate this, let us consider the below example of a simple discount calculator. Every Tuesday, there is a weekly discount where a 50% reduction is applied. On top of that, presenting a valid voucher code applies a further reduction.
 
 ```
 calculateDiscount(amount : Currency, voucherCode : String) : Currency {
