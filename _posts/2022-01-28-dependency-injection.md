@@ -51,7 +51,9 @@ class Client {
 ```
 
 ### Constructor Injection
-As the name implies, this method uses an object's constructor to deliver the dependency. Constructor injection is an excellent approach to forcing an injection; the injector **cannot** construct the client without the required dependencies. Another consideration of constructor injection is the inability to change dependencies after construction. This method may be preferred if a dependency is mandatory for the client to function.
+As the name implies, this method uses an object's constructor to deliver the service. There are two key aspects to consider when using Constructor Injection. Firstly, since the constructor creates the client, it cannot be created without its required service(s) upfront. Secondly, it is only possible to call the constructor once; therefore, changing services after creation is impossible with this method alone.
+
+The nature of these constraints makes Constructor Injection an excellent approach to **force** an injection (for mandatory dependencies).
 
 The below example depicts a simple example of constructor injection.
 ```
