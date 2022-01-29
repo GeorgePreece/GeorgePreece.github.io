@@ -11,14 +11,14 @@ tags: development
 ---
 # {{ page.title }}
 
-When writing tests, we often find ourselves in a situation where the code unit we are testing interacts with another. This can make testing every logical path difficult or sometimes even impossible. Test doubles alleviate this by replacing the dependent code unit with a test-specific replacement. This replacement can allow us to inject indirect inputs, verify indirect outputs and even increase test execution speed. The term "test double" was coined by Gerard Meszaros in the book [XUnit Test Patterns: Refactoring Test Code](http://xunitpatterns.com/), where it was described as a stunt double; it appears the same as the actual actor, but it does what we instruct it.
+Writing tests often leads us to a situation where two code units interact, making testing every logical path difficult or sometimes even impossible. Test doubles alleviate this by replacing the dependent code unit with a test-specific replacement. The replacement allows us to control indirect inputs, verify indirect outputs and even increase test execution speed. Gerard Meszaros coined the term "test double" in [XUnit Test Patterns: Refactoring Test Code](http://xunitpatterns.com/). Gerard described it as a stunt double; it appears the same as the real actor but does what we instruct it.
 
 ## Direct and Indirect I/O
-To understand the power of test doubles, it is important to crucial the difference between direct and indirect input/output.
+To make the most of test doubles, it is crucial to understand the difference between direct and indirect input/output.
 
-**Direct I/O** can be summarised as the immediate data communicated with the code unit. So, direct input is the data we _send_ to the code unit (typically in the form of arguments), whereas direct output is the data we _receive_ (typically in the form of a return value). 
+**Direct I/O** is the immediate data communicated with the code unit. That is, the data we _send_ to the code unit (typically in the form of arguments), whereas direct output is the data we _receive_ (typically in the form of a return value). 
 
-**Indirect I/O**, on the other hand, is the data communicated with a _dependency_ of the code unit. To illustrate this, let us consider the below example of a simple discount calculator. There is a weekly discount every Tuesday where a 50% reduction is applied. Further reductions can be applied if a valid voucher code has been presented.
+**Indirect I/O**, on the other hand, is the data communicated with a dependency of the code unit. To illustrate this, let us consider the below example of a simple discount calculator. Every Tuesday, there is a weekly discount where a 50% reduction is applied. On top of that, presenting a valid voucher code applies a further reduction.
 
 ```
 calculateDiscount(amount : Currency, voucherCode : String) : Currency {
@@ -34,19 +34,19 @@ calculateDiscount(amount : Currency, voucherCode : String) : Currency {
 }
 ```
 
-In the above example, the arguments `amount` and `voucherCode` are direct inputs, and the variable `result` is the direct output. There is, however, more data being _indirectly input_ in the form of `Date.getWeekday()`. This is important because, if uncontrolled, our test can produce inconsistent results simply because of the current weekday. If we were able to control this input, we could consistently test both code paths. We also have data being _indirectly output_ from the unit when the value of `result` is sent to `voucherService`. If we do not have an observation point to this, then we are usually left with untested requirements.
+In the above example, the arguments `amount` and `voucherCode` are direct inputs, and the variable `result` is the direct output. There is, however, more data being _indirectly input_ in the form of `Date.getWeekday()`. If inputs are uncontrolled, our test can produce inconsistent results simply because of the current weekday. However, if we could control this input, we could test both code paths consistently. The example also includes indirect output when we pass `result` into `applyReduction`. Without an observation point, we may be unable to test various requirements.
 
 ## Variations
-Test doubles come in different flavours, each bringing its different uses and benefits to the table. A "double" is essentially an umbrella term encompassing the different variations. The five most notable named variations are [_stubs_](#test-stub), [_spies_](#test-spy), [_mocks_](#mock-object), and [_fakes_](#fake-object).
+Test doubles come in different flavours, each bringing its different uses and benefits to the table. A "double" is essentially an umbrella term encompassing the different variations. The five most notable variations are [_stubs_](#test-stub), [_spies_](#test-spy), [_mocks_](#mock-object), and [_fakes_](#fake-object).
 
 ### Test Stub
-Test stubs allow us to control the indirect inputs of a test. Essentially, any API requests made to a test stub are met with a pre-programmed response allowing us to exercise previously untested code paths.
+Test stubs allow us to control the indirect inputs of a test. The stub responds to invocations with pre-programmed outputs, allowing us to control the test execution path. Being in control of the execution path enables us to build more consistent tests and exercise previously untested paths.
 
 ### Test Spy
-Test spies allow us to verify the indirect outputs of a test. They record invocations that can be used at the end of the test to verify that the correct data was sent. Spies are commonly used to extend existing tests as they do not alter the behaviour of the code unit but instead allow us to add an extra observation point. 
+Test spies allow us to verify the indirect outputs of a test. They record invocations that can be used at the end of the test to verify that the correct data was received. Spies do not alter the dependency behaviour, making them well-suited for test cases with irreplaceable dependencies.
 
 ### Mock Object
-Mock objects are a powerful variation of test doubles as they allow us to both control indirect inputs and verify indirect outputs. At the beginning of the test, we pre-programme the mock object with responses (similar to stubs) along with expected invocations (including the data). During the test, whenever the mock is invoked, it will compare the data it received with the pre-defined expectations. If there is a mismatch, the assertion will fail and ultimately fail the test.
+Mock objects are a powerful variation of test doubles as they allow us to control indirect inputs and verify indirect outputs. During the test setup, we pre-programme the mock object with responses (similar to stubs) along with expected invocations. When invoked, the mock will compare the data it receives with its pre-defined expectations. If there is a mismatch, the assertion will fail and ultimately fail the test.
 
 ### Fake Object
-Fake objects are used to substitute dependencies that are unavailable or cause slow tests. They are lightweight implementations providing the same functionality as the original. A typical example is to replace a disk-based data store with an in-memory representation. This in-memory data store is not designed for end-user consumption and thus lacks characteristics such as scalability and functionality. Nevertheless, it will drastically increase test execution speed.
+Fake objects substitute dependencies that are unavailable or cause slow tests. They are lightweight implementations providing (mostly) the same functionality as the original. A typical example is to replace a disk-based datastore with an in-memory representation. The fake datastore is explicitly built for tests and may lack characteristics such as scalability and functionality. Performance, however, will increase exponentially.
