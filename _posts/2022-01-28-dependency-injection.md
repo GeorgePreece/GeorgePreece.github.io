@@ -76,11 +76,11 @@ class Client {
 ```
 
 ### Setter Injection
-In contrast to constructor injection, setter injection helps inject dependencies that are optional or may change during the object's lifetime. Adding dependencies like these to a constructor would add unnecessary clutter and is typically better suited in a setter method.
+Setter Injection uses a setter method to inject a service which, in contrast to Constructor Injection, makes Setter Injection the preferred approach to inject **optional** dependencies. Also, if the client requires changing services post-creation, consider this injection method. 
 
 ```
 class Application {
-    execute() : void {
+    execute(void) : void {
         final Client client;
 
         client = new Client();
