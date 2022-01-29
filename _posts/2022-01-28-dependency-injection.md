@@ -58,7 +58,7 @@ The nature of these constraints makes Constructor Injection an excellent approac
 The following example depicts a simple implementation of Constructor Injection.
 ```
 class Application {
-    execute() : void {
+    execute(void) : void {
         final Client client;
 
         client = new Client(new ServiceImpl());
