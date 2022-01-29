@@ -16,7 +16,7 @@ Writing tests often leads us to a situation where two code units interact, makin
 ## Direct and Indirect I/O
 Making the most of test doubles requires understanding the difference between direct and indirect input/output.
 
-**Direct I/O** is the immediate data communicated with the unit of code. That is, the data we _send_ to the unit of code unit (typically in the form of arguments), whereas the direct output is the data we receive (typically in the form of a return value).
+**Direct I/O** is the immediate data communicated with the unit of code. That is, the data we _send_ (typically in the form of arguments), whereas the direct output is the data we receive (typically in the form of a return value).
 
 **Indirect I/O**, on the other hand, is the data communicated with a dependency of the unit of code. To illustrate this, let us consider the below example of a simple discount calculator. Every Tuesday, there is a weekly discount where a 50% reduction is applied. On top of that, presenting a valid voucher code applies a further reduction.
 
