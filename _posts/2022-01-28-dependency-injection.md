@@ -55,7 +55,7 @@ As the name implies, this method uses an object's constructor to deliver the ser
 
 The nature of these constraints makes Constructor Injection an excellent approach to **force** an injection (for mandatory dependencies).
 
-The below example depicts a simple example of constructor injection.
+The following example depicts a simple implementation of Constructor Injection.
 ```
 class Application {
     execute() : void {
