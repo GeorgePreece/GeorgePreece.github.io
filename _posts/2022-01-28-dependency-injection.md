@@ -27,7 +27,28 @@ Dependency Injection (DI) is a technique to apply an _inversion of control_, whe
 ```
 
 ## Injection Methods
-In the previous diagram, the ambiguous term "inject" is used. This operation can happen in many different ways, but the two core approaches are [_Constructor Injection_](#constructor-injection) and [_Setter Injection_](#setter-injection). Other approaches are typically language-specific and use features such as Reflection (a feature that allows an application to introspect itself).
+In the previous diagram, the ambiguous term "inject" is used. This operation can happen in many different ways, but the two core approaches are [_Constructor Injection_](#constructor-injection) and [_Setter Injection_](#setter-injection). Other approaches are typically language-specific and use features such as Reflection, which allows an application to introspect itself.
+
+Before exploring these methods, consider the following example of a client/service that does not perform an injection. When comparing this example with Constructor Injection and Setter Injection, notice how the client is responsible for constructing the service.
+
+```
+class Application {
+    execute(void) : void {
+        final Client client;
+
+        client = new Client();
+        // Do something with client
+    }
+}
+
+class Client {
+    service : IService;
+
+    constructor(void) {
+        this.service = new ServiceImpl();
+    }
+}
+```
 
 ### Constructor Injection
 As the name implies, this method uses an object's constructor to deliver the dependency. Constructor injection is an excellent approach to forcing an injection; the injector **cannot** construct the client without the required dependencies. Another consideration of constructor injection is the inability to change dependencies after construction. This method may be preferred if a dependency is mandatory for the client to function.
