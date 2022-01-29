@@ -26,6 +26,11 @@ Dependency Injection (DI) is a technique to apply an _inversion of control_, whe
       |                                |                                 |
 ```
 
+There are three major roles played in DI:
+- **the Client** who depends on functionality provided by; 
+- **the Service** that implements functionality through an interface
+- **the Injector** who facilitates injecting the Service into the Client
+
 ## Injection Methods
 In the previous diagram, the ambiguous term "inject" is used. This operation can happen in many different ways, but the two core approaches are [_Constructor Injection_](#constructor-injection) and [_Setter Injection_](#setter-injection). Other approaches are typically language-specific and use features such as Reflection, which allows an application to introspect itself.
 
