@@ -34,7 +34,7 @@ calculateDiscount(amount : Currency, voucherCode : String) : Currency {
 }
 ```
 
-In the above example, the arguments `amount` and `voucherCode` are direct inputs, and the variable `result` is the direct output. There is, however, more data being _indirectly input_ in the form of `Date.getWeekday()`. If inputs are uncontrolled, our test can produce inconsistent results simply because of the current weekday. However, if we could control this input, we could test both code paths consistently. The example also includes indirect output when we pass `result` into `applyReduction`. Without an observation point, we may be unable to test various requirements.
+In the above example, the arguments `amount` and `voucherCode` are direct inputs, and the variable `result` is the direct output. There is, however, more data being _indirectly input_ in the form of `Date.getWeekday()`. If inputs are uncontrolled, our test can produce inconsistent results simply because of the current weekday. However, if we could control this input, we could test all code paths consistently. The example also includes _indirect output_ when we pass `result` into `applyReduction`. Without an observation point, we may be unable to test various requirements.
 
 ## Variations
 Test doubles come in different flavours, each bringing its different uses and benefits to the table. A "double" is essentially an umbrella term encompassing the different variations. The five most notable variations are [_stubs_](#test-stub), [_spies_](#test-spy), [_mocks_](#mock-object), and [_fakes_](#fake-object).
