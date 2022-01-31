@@ -30,7 +30,7 @@ description: A blog on software architecture, development and security
     <div class="margin-horz">
         <address class="text-center margin-vert">
             {% for link in site.links %}
-                <a href="{{ link.value }}" target="_blank">{{ link.label }}</a>
+                <a href="{{ link.value }}" target="_blank" rel="noopener">{{ link.label }}</a>
                 <br />
             {% endfor %}
         </address>
