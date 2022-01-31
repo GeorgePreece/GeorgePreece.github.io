@@ -18,7 +18,7 @@ body { width:100%;max-width:1024px;margin:auto;
 main { flex:1;display:flex;flex-wrap:wrap-reverse }
 
 /* Defaults */
-html { font:large"CMU Serif";color:var(--colorTextDefault);background:var(--colorBackground) }
+html { font:medium"CMU Serif";color:var(--colorTextDefault);background:var(--colorBackground) }
 h1,h2,h3,h4,h5,h6 { font-weight:normal;margin:0;color:var(--colorTextHeading) }
 address { font-style:normal }
 code { background:var(--colorCodeBackground);font:small"CMU Typewriter Text";padding:0 2px }
@@ -52,7 +52,7 @@ a:hover { color:var(--colorTextLinkHover) }
 .icon-date::before  { content:"\1F4C5";font-size:medium }
 .icon-label::before { content:"\1F3F7";font-size:medium }
 
-.toc ol, .toc ul { list-style-type:square;padding-inline-start:20px;margin:0 }
+.toc ol, .toc ul { font-size:large;list-style-type:square;padding-inline-start:20px;margin:0 }
 
 @media screen and (min-width: 768px) {
     .sidebar-content { position:sticky;top:0 }
