@@ -27,12 +27,13 @@ description: A blog on software architecture, development and security
             style="border-radius:var(--spacingSize);box-shadow:0 0 4px #3333" />
     </header>
 
-    <div class="margin-horz">
+    <div class="margin-horz text-justify">
         <address class="text-center margin-vert">
             {% for link in site.links %}
                 <a class="line-spacing" href="{{ link.value }}" target="_blank" rel="noopener">{{ link.label }}</a>
             {% endfor %}
         </address>
         <p>{{ site.biography }}</p>
+        <p class="text-italic">For professional enquiries, please get in touch with me through LinkedIn.</p>
     </div>
 </section>

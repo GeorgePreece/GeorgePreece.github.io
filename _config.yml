@@ -8,8 +8,10 @@ links:
     label: "linkedin.com/in/georgepreece"
     value: "https://linkedin.com/in/georgepreece"
 biography: >
-  I'm George Preece, a software engineer with a passion for designing &amp; 
-  building enterprise applications. I started this blog to document and share 
-  what I have learned over the years and hope you will find as much use in 
-  reading my posts as I find writing them!
+  Welcome to my blog on software architecture, development and security! 
+  I&apos;m a software engineer passionate about designing &amp; building 
+  enterprise applications with a particular interest in development 
+  methodologies and practices. I started this blog to document and share the 
+  knowledge I have accumulated over the years and hope you find a use for it 
+  just as I have.
 permalink: /:categories/:title
