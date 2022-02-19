@@ -52,8 +52,8 @@ a:hover { color:var(--colorTextLinkHover) }
 .text-italic  { font-style:italic }
 .text-oblique  { font-style:oblique }
 
-.icon-date::before  { content:"\1F4C5";font-size:medium }
-.icon-label::before { content:"\1F3F7";font-size:medium }
+.icon-date::before  { content:"\1F4C5";font-size:medium;padding-right:4px }
+.icon-label::before { content:"\1F3F7";font-size:medium;padding-right:4px }
 
 .toc ol, .toc ul { font-size:large;list-style-type:square;padding-inline-start:20px;margin:0 }
 
