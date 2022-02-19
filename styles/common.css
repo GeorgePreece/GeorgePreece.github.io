@@ -50,15 +50,20 @@ a:hover { color:var(--colorTextLinkHover) }
 .text-justify { text-align:justify }
 
 .text-italic  { font-style:italic }
-.text-oblique  { font-style:oblique }
+.text-oblique { font-style:oblique }
+
+.text-large { font-size:large }
 
 .icon-date::before  { content:"\1F4C5";font-size:medium;padding-right:4px }
 .icon-label::before { content:"\1F3F7";font-size:medium;padding-right:4px }
+
+
+article.with-h1 > h1 { font-size:x-large }
 
 .toc ol, .toc ul { font-size:large;list-style-type:square;padding-inline-start:20px;margin:0 }
 
 @media screen and (min-width: 768px) {
     .sidebar-content { position:sticky;top:0 }
-    main > section:first-child { flex:1.618 }
-    main > section:last-child  { flex:1.000 }
+    main > div:first-child { flex:1.618 }
+    main > div:last-child  { flex:1.000 }
 }
