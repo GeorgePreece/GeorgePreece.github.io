@@ -2,7 +2,7 @@
 layout: "article"
 
 title: "Architecture Decision Records"
-description: "Learn how to document decisions for requirements that are architecturally significant"
+description: "Learn how to document architecturally-significant decisions and why it is crucial for development teams"
 author: "George Preece"
 category: article
 tags: architecture
