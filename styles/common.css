@@ -20,6 +20,7 @@ main { flex:1;display:flex;flex-wrap:wrap-reverse }
 /* Defaults */
 html { font:medium"CMU Serif";color:var(--colorTextDefault);background:var(--colorBackground) }
 h1,h2,h3,h4,h5,h6 { font-weight:normal;margin:0;color:var(--colorTextHeading) }
+ul,ol { text-align:left }
 address { font-style:normal }
 code { background:var(--colorCodeBackground);font:small"CMU Typewriter Text";padding:0 2px }
 pre { max-width:calc(100vw - 2 * var(--spacingSize)) }
