@@ -28,7 +28,7 @@ pre > code { display:block;padding:var(--spacingSize);border-left:thick solid va
 pre > code::-webkit-scrollbar { width:0 }
 a { color:var(--colorTextLink);transition:color 250ms }
 a:hover { color:var(--colorTextLinkHover) }
-blockquote { border-left:medium solid black;margin:0; }
+blockquote { border-left:thick solid var(--colorCodeBorder);margin:0; }
 blockquote > p { padding:var(--spacingSize); }
 
 /* Utilities */
