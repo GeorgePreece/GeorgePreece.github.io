@@ -13,6 +13,7 @@ Coined by Michael Nygard, an Architecture Decision Record (or ADR, for short) is
 ADRs address architecturally-significant requirements. The project team should define what they consider architecturally significant, however, a good rule of thumb is: if the decision is costly/expensive to unwind, it is significant. Nygard summarised architecturally-significant decisions as those that affect either:
 - **the structure**; such as choosing a distributed architecture style over a monolithic one
 - **non-functional characteristics**; software quality attributes such as usability, reliability, performance or supportability
-- **dependencies**; such as choosing which webserver framework to use
+- **dependencies**; such as choosing which web server framework to use
 - **interfaces**; such as public REST/SOAP APIs
 - or **construction techniques**; such as the language of choice for building the software
+
