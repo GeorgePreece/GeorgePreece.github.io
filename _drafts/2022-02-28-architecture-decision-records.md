@@ -21,4 +21,6 @@ It is essential to understand that ADRs are a form of agile documentation, and t
 
 > Working software over comprehensive documentation
 
-This value is not an excuse to not produce any documentation but rather a reminder to consider what documentation is valuable. We can create ADRs for numerous decisions, but documenting all of them is not always beneficial or practical. Again, it is for the team to decide what they consider significant.
+This value is not an excuse to produce minimal documentation but rather a reminder to consider what documentation is valuable. We can create ADRs for numerous decisions, but documenting all of them is not always beneficial or practical. Again, it is for the team to decide what they consider significant.
+
+Another decision the team should align on is where these records are stored. ADRs should be close to the source code and easily accessible to everyone who needs access. Two popular choices are on a project wiki or directly with the source code (in the repository). Both options work well. Just ensure you stay consistent as this collection will serve as the decision log.
