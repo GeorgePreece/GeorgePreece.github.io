@@ -18,5 +18,7 @@ ADRs address architecturally-significant requirements. The project team should d
 - or **construction techniques**; such as the language of choice for building the software
 
 It is essential to understand that ADRs are a form of agile documentation, and the agile manifesto defines the following core value.
+
 > Working software over comprehensive documentation
+
 This value is not an excuse to not produce any documentation but rather a reminder to consider what documentation is valuable. We can create ADRs for numerous decisions, but documenting all of them is not always beneficial or practical. Again, it is for the team to decide what they consider significant.
