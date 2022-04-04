@@ -17,7 +17,7 @@ ADRs address architecturally-significant requirements. The project team should d
 - **interfaces**; such as public REST/SOAP APIs
 - or **construction techniques**; such as the language of choice for building the software
 
-It is essential to understand that ADRs are a form of agile documentation, and the agile manifesto defines the following core value.
+It is essential to understand that ADRs are a form of agile documentation, and the [agile manifesto](https://agilemanifesto.org/) defines the following core value.
 
 > Working software over comprehensive documentation
 
