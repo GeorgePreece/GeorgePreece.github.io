@@ -27,6 +27,6 @@ This value is not an excuse to produce minimal documentation but rather a remind
 ## Writing an ADR
 All teams should use a template for ADRs. Templates help guide the author, informing them of the content required to formalise the decision (almost like a definition of done). They also assist with normalisation, making them more predictable and easier to digest for the team. 
 
-There are many openly-available templates out there. I would highly recommend starting with an existing template rather than creating your own. The team can adapt the template as their ADR usage begins to mature. 
+There are many openly-available templates and it would be wise to start with one rather than creating your own. The team can adapt the template as their ADR usage begins to mature.
 
 Another decision the team should align on is where these records are stored. ADRs should live close to the source code and easily accessible to anyone who needs access. Two popular choices are on a project wiki or directly with the source code (in the repository). Both options work well. Just ensure you stay consistent as this collection will serve as the decision log.
