@@ -28,4 +28,4 @@ All teams should use a template for ADRs. Templates help guide the author, infor
 
 There are many openly-available templates out there. I would highly recommend starting with an existing template rather than creating your own. The team can adapt the template as their ADR usage begins to mature. 
 
-Another decision the team should align on is where these records are stored. ADRs should be close to the source code and easily accessible to everyone who needs access. Two popular choices are on a project wiki or directly with the source code (in the repository). Both options work well. Just ensure you stay consistent as this collection will serve as the decision log.
+Another decision the team should align on is where these records are stored. ADRs should live close to the source code and easily accessible to anyone who needs access. Two popular choices are on a project wiki or directly with the source code (in the repository). Both options work well. Just ensure you stay consistent as this collection will serve as the decision log.
