@@ -31,4 +31,4 @@ All teams should use a template for ADRs. Templates help guide the author, infor
 
 There are many openly-available templates, and it would be wise to start with an existing one rather than creating your own. The team can adapt the template as their ADR usage begins to mature. [Nygard's original template](https://www.cognitect.com/blog/2011/11/15/documenting-architecture-decisions) is a solid choice as it provides a loose and straightforward format.
 
-Another decision the team should align on is where these records are stored. ADRs should live close to the source code and be easily accessible to anyone who needs access. Two popular choices are on a project wiki or directly with the source code (in the repository). Both options work well. Just ensure you stay consistent, as this collection will serve as the decision log.
+ADRs should live close to the source code and be easily accessible to their primary audience (developers/architects). Two popular choices are on a project wiki or directly with the source code (in the repository). Both options work well. Just ensure you stay consistent, as this collection will serve as the decision log.
