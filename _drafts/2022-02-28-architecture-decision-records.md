@@ -8,7 +8,7 @@ category: article
 tags: architecture
 ---
 # Architecture Decision Records
-[Coined by Michael Nygard](https://www.cognitect.com/blog/2011/11/15/documenting-architecture-decisions), an Architecture Decision Record (ADR) is a lightweight artefact capturing the motivation behind an architecturally-significant decision. The reasoning behind decisions is not always apparent, and this often leads developers into a rabbit hole of exploration and questions. Better clarity into these decisions helps align development teams toward the desired architecture.
+Coined by Michael Nygard, an Architecture Decision Record (ADR) is a lightweight artefact capturing the motivation behind an architecturally-significant decision. The reasoning behind decisions is not always apparent, and this often leads developers into a rabbit hole of exploration and questions. Better clarity into these decisions helps align development teams toward the desired architecture.
 
 ## Architecturally-Significant Requirements
 ADRs address architecturally-significant requirements (ASRs). The project team should define what they consider architecturally significant, however, a good rule of thumb is: if the decision is costly/expensive to unwind, it is significant. Nygard summarised these requirements as those that affect either:
@@ -27,6 +27,6 @@ This value is not an excuse to produce minimal documentation but rather a remind
 ## Writing an ADR
 All teams should use a template for ADRs. Templates help guide the author, informing them of the content required to formalise the decision (almost like a definition of done). They also assist with normalisation, making them more predictable and easier to digest for the team. 
 
-There are many openly-available templates and it would be wise to start with one rather than creating your own. The team can adapt the template as their ADR usage begins to mature.
+There are many openly-available templates, and it would be wise to start with an existing one rather than creating your own. The team can adapt the template as their ADR usage begins to mature. [Nygard's original template](https://www.cognitect.com/blog/2011/11/15/documenting-architecture-decisions) is a solid choice as it provides a loose and straightforward format.
 
-Another decision the team should align on is where these records are stored. ADRs should live close to the source code and easily accessible to anyone who needs access. Two popular choices are on a project wiki or directly with the source code (in the repository). Both options work well. Just ensure you stay consistent as this collection will serve as the decision log.
+Another decision the team should align on is where these records are stored. ADRs should live close to the source code and be easily accessible to anyone who needs access. Two popular choices are on a project wiki or directly with the source code (in the repository). Both options work well. Just ensure you stay consistent, as this collection will serve as the decision log.
