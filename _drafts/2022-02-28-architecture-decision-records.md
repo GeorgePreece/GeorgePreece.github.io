@@ -10,7 +10,7 @@ tags: architecture
 # Architecture Decision Records
 Coined by Michael Nygard, an Architecture Decision Record (ADR) is a lightweight artefact capturing the motivation behind an architecturally-significant decision. The reasoning behind decisions is not always apparent, and this often leads developers into a rabbit hole of exploration and questions. Better clarity into these decisions helps align development teams toward the desired architecture.
 
-ADRs have proven to be valuable artefacts in the world of agile. They are concise documents with a focused audience and intent.
+ADRs have proven to be valuable artefacts in the world of agile. They are concise documents with a focussed audience and intent.
 
 ## When to create an ADR
 ADRs address architecturally-significant requirements (ASRs). The project team should define what they consider architecturally significant, however, a good rule of thumb is: if the decision is costly/expensive to unwind, it is significant. Nygard summarised these requirements as those that affect either:
