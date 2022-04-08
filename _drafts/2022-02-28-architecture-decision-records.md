@@ -12,7 +12,7 @@ Coined by Michael Nygard, an Architecture Decision Record (ADR) is a lightweight
 
 ADRs have proven to be valuable artefacts in the world of agile. They are concise documents with a focussed audience and intent.
 
-## When to create an ADR
+## Architecturally-Significant Requirements
 ADRs address architecturally-significant requirements (ASRs). The project team should define what they consider architecturally significant, however, a good rule of thumb is: if the decision is costly/expensive to unwind, it is significant. Nygard summarised these requirements as those that affect either:
 - **the structure**; such as choosing a distributed architecture style over a monolithic one
 - **non-functional characteristics**; such as usability, reliability, performance or supportability (software quality attributes)
@@ -20,17 +20,16 @@ ADRs address architecturally-significant requirements (ASRs). The project team s
 - **interfaces**; such as public REST/SOAP APIs
 - or **construction techniques**; such as the language of choice for building the software
 
-It is essential to understand that ADRs are a form of agile documentation, and the [agile manifesto](https://agilemanifesto.org/) defines the following core value.
+## Getting Started
+
+As a form of agile documentation, it is essential to consider the following core value defined in the [agile manifesto](https://agilemanifesto.org/) when assessing if you should create an ADR.
 
 > Working software over comprehensive documentation
 
-This value is not an excuse to produce minimal documentation but rather a reminder to consider what documentation is valuable. We can create ADRs for numerous decisions, but documenting all of them is not always beneficial or practical. Again, it is for the team to decide what they consider significant.
+This value is not an excuse to produce minimal or lacking documentation but rather a reminder to consider what documentation is valuable. We could create ADRs for every decision made, but documenting all of them is not always beneficial or practical.
 
-## How to create an ADR
-All teams should use a template for ADRs. Templates help guide the author, informing them of the content required to formalise the decision (almost like a definition of done). They also assist with normalisation, making them more predictable and easier to digest for the team. 
+All teams should use a template for ADRs. Templates help guide the author, informing them of the content required to formalise the decision (almost like a definition of done). They also assist with normalisation, making them more predictable and easier to digest for the team. There are many openly-available templates, and it would be wise to start with an existing one rather than creating your own. The team can adapt the template as their ADR usage begins to mature. [Nygard's original template](https://www.cognitect.com/blog/2011/11/15/documenting-architecture-decisions) is a solid choice as it provides a loose and straightforward format.
 
-There are many openly-available templates, and it would be wise to start with an existing one rather than creating your own. The team can adapt the template as their ADR usage begins to mature. [Nygard's original template](https://www.cognitect.com/blog/2011/11/15/documenting-architecture-decisions) is a solid choice as it provides a loose and straightforward format.
+ADRs should live close to the source code and be easily accessible to their primary audience (developers/architects). Two popular choices are on a project wiki or directly with the source code (in the repository). Both options work well. Just ensure you stay consistent, as this collection will serve as the decision log. A good practice for naming the artefact is to include the date (or sequence identifier) and use a concise noun phrase such as "Use Jetty web server".
 
-ADRs should live close to the source code and be easily accessible to their primary audience (developers/architects). Two popular choices are on a project wiki or directly with the source code (in the repository). Both options work well. Just ensure you stay consistent, as this collection will serve as the decision log.
-
-Technical writing best practices should be followed, such as using an active voice and avoiding ambiguity. If you are unfamiliar with technical writing, I highly recommend Google's [Technical Writing One](https://developers.google.com/tech-writing/one) course. The course can be completed within a couple of hours and provides a solid foundation for producing technical documentation.
+Since we are documenting an architectural decision, it is import to provide as much clarity as possible. That's why technical writing best practices should be followed, such as using an active voice and avoiding ambiguity. If you are unfamiliar with technical writing, I highly recommend Google's [Technical Writing One](https://developers.google.com/tech-writing/one) course. The course can be completed within a couple of hours and provides a solid foundation for producing technical documentation.
