@@ -9,7 +9,9 @@ tags: development
 ---
 # {{ page.title }}
 
-Writing tests often leads us to a situation where two code units interact, making testing every logical path difficult or sometimes even impossible. Test doubles alleviate this by replacing the dependent code unit with a test-specific replacement. The replacement allows us to control indirect inputs, verify indirect outputs and even increase test execution speed. Gerard Meszaros coined the term "test double" in [XUnit Test Patterns: Refactoring Test Code](http://xunitpatterns.com/), describing it as a stunt double; it appears the same as the real actor but does what we instruct it.
+Unit testing is often tricky when two or more units interact. This can make testing each logical code path difficult or sometimes even impossible. 
+
+Test doubles alleviate this by substituting dependencies with test-specific replacements. These replacements enable us to control _indirect_ inputs, verify _indirect_ outputs, and even increase test execution speed. Gerard Meszaros coined the term “test double” in [XUnit Test Patterns: Refactoring Test Code](http://xunitpatterns.com/). Gerard described them as stunt doubles - they appear the same as the actors but are trained to perform specific stunts for the scene that the actor would not normally do.
 
 ## Direct and Indirect I/O
 Making the most of test doubles requires understanding the difference between direct and indirect input/output.
