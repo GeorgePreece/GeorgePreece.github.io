@@ -8,10 +8,9 @@ links:
     label: "linkedin.com/in/georgepreece"
     value: "https://linkedin.com/in/georgepreece"
 biography: >
-  Welcome to my blog on software architecture, development and security! 
-  I&apos;m a software architect/engineer passionate about designing &amp; building 
-  enterprise applications with a particular interest in development 
-  methodologies and practices. I started this blog to document and share the 
-  knowledge I have accumulated over the years and hope you find a use for it 
-  just as I have.
+  I am a London-based Software Architect/Engineer with a passion for designing 
+  and building enterprise-level applications. My interests also extend to 
+  development methodologies and practices. Really, I just like to see teams 
+  efficiently and optimally delivering high-quality software. I started this 
+  blog to document and share the crucial lessons I have learned over the years.
 permalink: /:categories/:title
