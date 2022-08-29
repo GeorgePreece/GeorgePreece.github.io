@@ -7,7 +7,6 @@ author: "George Preece"
 category: article
 tags: architecture
 ---
-# Architecture Decision Records
 Coined by Michael Nygard, an Architecture Decision Record (ADR) is a lightweight artefact capturing the motivation behind an architecturally-significant decision. The reasoning behind decisions is not always apparent, and this often leads developers into a rabbit hole of exploration and questions. Better clarity into these decisions helps align development teams toward the desired architecture.
 
 ADRs have proven to be valuable artefacts in the world of agile. They are concise documents with a focussed audience and intent. Generally, an ADR will describe the context, the decision itself, other solutions explored and the consequences (positive or negative) after applying the decision.

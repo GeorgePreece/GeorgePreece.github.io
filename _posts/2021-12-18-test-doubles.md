@@ -7,11 +7,7 @@ author: "George Preece"
 category: article
 tags: development
 ---
-# {{ page.title }}
-
-Unit testing is often tricky when two or more units interact. This can make testing each logical code path difficult or sometimes even impossible. 
-
-Test doubles alleviate this by substituting dependencies with test-specific replacements. These replacements enable us to exercise "untestable" code paths, increase test execution speed, and more. Gerard Meszaros coined the term “test double” in [XUnit Test Patterns: Refactoring Test Code](http://xunitpatterns.com/). Gerard described them as stunt doubles—they appear the same as the actors but are trained for specific scenarios.
+Unit testing is often tricky when two or more units interact. This can make testing each logical code path difficult or sometimes even impossible. Test doubles alleviate this by substituting dependencies with test-specific replacements. These replacements enable us to exercise "untestable" code paths, increase test execution speed, and more. Gerard Meszaros coined the term “test double” in [XUnit Test Patterns: Refactoring Test Code](http://xunitpatterns.com/). Gerard described them as stunt doubles—they appear the same as the actors but are trained for specific scenarios.
 
 ## Indirect Input/Output
 When we write a unit test, we send data (typically in the form of arguments) to the unit and receive data (typically as a return value) back to the test for verification. This is direct input and output, respectively.
