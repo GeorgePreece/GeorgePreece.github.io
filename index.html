@@ -16,6 +16,7 @@ description: A blog on software architecture, development and security
                             <li>{{ tag }}</li>
                         {% endfor %}
                     </ul>
+                    <p>{{ post.excerpt | truncate: 256, "" | append: "…" }}</p>
                 </li>
             {% endfor %}
         </ol>
