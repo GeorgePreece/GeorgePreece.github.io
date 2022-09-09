@@ -32,6 +32,7 @@ description: A blog on software architecture, development and security
         <address class="text-center margin-vert">
             {% for link in site.links %}
                 <a class="line-spacing" href="{{ link.value }}" target="_blank" rel="noopener">{{ link.label }}</a>
+                {% if forloop.last == false %}<br />{% endif %}
             {% endfor %}
         </address>
         <p>{{ site.biography }}</p>
