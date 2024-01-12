@@ -1,5 +1,5 @@
 title: "George Preece"
-description: "A blog on software architecture, development and security"
+description: "A blog on software architecture and development"
 links:
   - GitHub:
     label: "github.com/georgepreece"
@@ -8,7 +8,7 @@ links:
     label: "linkedin.com/in/georgepreece"
     value: "https://linkedin.com/in/georgepreece"
 biography: >
-  I am a London-based Software Architect/Engineer with a passion for designing 
+  I am a London-based Software Engineer with a passion for designing 
   and building enterprise-level applications. My interests also extend to 
   development methodologies and practices. Really, I just like to see teams 
   efficiently and optimally delivering high-quality software. I started this 
