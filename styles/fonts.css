@@ -1,23 +1,24 @@
-@font-face { font-family:"CMU Bright";font-weight:900;font-style:normal;src:url("../fonts/cmunbbx.ttf");font-display:swap }
-@font-face { font-family:"CMU Bright";font-weight:900;font-style:italic;src:url("../fonts/cmunbxo.ttf");font-display:swap }
-@font-face { font-family:"CMU Bright";font-weight:400;font-style:italic;src:url("../fonts/cmunbmo.ttf");font-display:swap }
-@font-face { font-family:"CMU Bright";font-weight:400;font-style:normal;src:url("../fonts/cmunbmr.ttf");font-display:swap }
-@font-face { font-family:"CMU Bright";font-weight:700;font-style:normal;src:url("../fonts/cmunbsr.ttf");font-display:swap }
-@font-face { font-family:"CMU Bright";font-weight:700;font-style:italic;src:url("../fonts/cmunbso.ttf");font-display:swap }
-
-@font-face { font-family:"CMU Concrete";font-weight:400;font-style:normal;src:url("../fonts/cmunorm.ttf");font-display:swap }
-@font-face { font-family:"CMU Concrete";font-weight:400;font-style:italic;src:url("../fonts/cmunoti.ttf");font-display:swap }
-@font-face { font-family:"CMU Concrete";font-weight:700;font-style:normal;src:url("../fonts/cmunobx.ttf");font-display:swap }
-@font-face { font-family:"CMU Concrete";font-weight:700;font-style:italic;src:url("../fonts/cmunobi.ttf");font-display:swap }
-
-@font-face { font-family:"CMU Sans Serif";font-weight:400;font-style:normal;src:url("../fonts/cmunss.ttf");font-display:swap }
-@font-face { font-family:"CMU Sans Serif";font-weight:400;font-style:italic;src:url("../fonts/cmunsi.ttf");font-display:swap }
-@font-face { font-family:"CMU Sans Serif";font-weight:700;font-style:normal;src:url("../fonts/cmunsx.ttf");font-display:swap }
-@font-face { font-family:"CMU Sans Serif";font-weight:700;font-style:italic;src:url("../fonts/cmunso.ttf");font-display:swap }
-
-@font-face { font-family:"CMU Serif";font-weight:400;font-style:normal;src:url("../fonts/cmunrm.ttf");font-display:swap }
-@font-face { font-family:"CMU Serif";font-weight:400;font-style:italic;src:url("../fonts/cmunti.ttf");font-display:swap }
-@font-face { font-family:"CMU Serif";font-weight:700;font-style:normal;src:url("../fonts/cmunrb.pfb.ttf");font-display:swap }
-@font-face { font-family:"CMU Serif";font-weight:700;font-style:italic;src:url("../fonts/cmunbi.ttf");font-display:swap }
-
-@font-face { font-family:"CMU Typewriter Text";src:url("../fonts/cmuntt.ttf");font-display:swap }
+@font-face {
+    font-family: "Source Serif";
+    src: url("../fonts/SourceSerif4-VariableFont_opsz\,wght.ttf") format("truetype-variations");
+    font-weight: 1 999;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Source Serif";
+    src: url("../fonts/SourceSerif4-Italic-VariableFont_opsz\,wght.ttf") format("truetype-variations");
+    font-weight: 1 999;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Source Code";
+    src: url("../fonts/SourceCodePro-VariableFont_wght.ttf") format("truetype-variations");
+    font-weight: 1 999;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Source Code";
+    src: url("../fonts/SourceCodePro-Italic-VariableFont_wght.ttf") format("truetype-variations");
+    font-weight: 1 999;
+    font-weight: italic;
+}
