@@ -1,12 +1,12 @@
 :root {
     --spacingSize:16px;
 
-    --colorBackground:#EEE;
-    --colorCodeBackground:#DDD;
-    --colorCodeBorder:#CCC;
+    --colorBackground:#F8F8F8;
+    --colorCodeBackground:#E6E6E6;
+    --colorCodeBorder:#D5D5D5;
 
     --colorTextHeading:#000;
-    --colorTextDefault:#333;
+    --colorTextDefault:#222222;
     --colorTextLink:#666;
     --colorTextLinkHover:#000;
 }
@@ -18,8 +18,12 @@ body { width:100%;max-width:1024px;margin:auto;
 main { flex:1;display:flex;flex-wrap:wrap-reverse }
 
 /* Defaults */
-html { font:medium"Source Serif";color:var(--colorTextDefault);background:var(--colorBackground) }
-h1,h2,h3,h4,h5,h6 { font-weight:normal;margin:0;color:var(--colorTextHeading) }
+html {
+    font: medium "Source Serif";
+    color: var(--colorTextDefault);
+    background:var(--colorBackground);
+}
+
 ul,ol { text-align:left }
 address { font-style:normal }
 code { background:var(--colorCodeBackground);font:small"Source Code";padding:0 2px }
@@ -27,10 +31,12 @@ pre { max-width:calc(100vw - 2 * var(--spacingSize)) }
 pre > code { display:block;padding:var(--spacingSize);border-left:thick solid var(--colorCodeBorder);
     overflow:scroll;scrollbar-width:none }
 pre > code::-webkit-scrollbar { width:0 }
-a { color:var(--colorTextLink);transition:color 250ms }
-a:hover { color:var(--colorTextLinkHover) }
+
 blockquote { border-left:thick solid var(--colorCodeBorder);margin:0; }
 blockquote > p { padding:var(--spacingSize); }
+
+.link, .link:visited { color: var(--colorTextLink) }
+.link:hover, .link:focus { color: var(--colorTextLinkHover) }
 
 /* Utilities */
 .list-inline { display:inline;font-size:0;margin:0;padding:0 }
@@ -70,4 +76,34 @@ article.with-h1 > h1 { font-size:x-large }
     .sidebar-content { position:sticky;top:0 }
     main > div:first-child { flex:1.618 }
     main > div:last-child  { flex:1.000 }
+}
+
+/* Typography */
+.heading, .heading > a.link { 
+    color: var(--colorTextHeading);
+    font-weight: 600;
+    line-height: 1.3;/
+    margin-top: calc(1em / 1.125); 
+    margin-bottom: calc(1em * 0.25);
+}
+.text {
+    color: var(--colorTextDefault);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: calc(1em / 1.125);
+    margin-bottom: calc(1em / 1.125);
+}
+.detail {
+    color: var(--colorTextDefault);
+    font-weight: 400;
+    line-height: 1.3;
+    margin-top: calc(1em / 1.125);
+    margin-bottom: calc(1em / 1.125);
+}
+.code {
+    color: var(--colorTextDefault);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: calc(1em / 1.125);
+    margin-bottom: calc(1em / 1.125);
 }
