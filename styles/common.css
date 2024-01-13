@@ -37,7 +37,7 @@ address { font-style:normal }
 .text-left    { text-align:left }
 .text-center  { text-align:center }
 .text-right   { text-align:right }
-.text-justify { text-align:justify }
+.text-justify { text-align:justify;hyphens:auto }
 
 .text-italic  { font-style:italic }
 .text-oblique { font-style:oblique }
