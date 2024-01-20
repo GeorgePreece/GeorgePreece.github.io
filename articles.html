@@ -1,0 +1,22 @@
+---
+layout: "template"
+
+title:  "Articles"
+---
+<div>
+    <nav class="margin-horz">
+        {% for post in site.posts %}
+            <article class="padding-vert">
+                <h2 class="text-large"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+                <time class="icon-date" datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
+                <ul class="icon-label list-inline list-comma">
+                    {% for tag in post.tags %}
+                        <li>{{ tag }}</li>
+                    {% endfor %}
+                </ul>
+                {{ post.excerpt | truncate: 256, "…" }}
+            </article>
+        {% endfor %}
+    </nav>
+</div>

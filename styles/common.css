@@ -12,6 +12,7 @@
     --color-fuchia-1: #b622b7;
     --color-fuchia-2: #9d039e;
     --color-fuchia-3: #800081;
+    --color-orange-1: #f68511;
 }
 
 /* Structure */
@@ -44,8 +45,6 @@ address { font-style:normal }
 .padding-vert { padding-top:var(--spacing-md);padding-bottom:var(--spacing-md) }
 .padding-horz { padding-left:var(--spacing-md);padding-right:var(--spacing-md) }
 
-.line-spacing { line-height:calc(var(--spacing-md) * 2) }
-
 .text-left    { text-align:left }
 .text-center  { text-align:center }
 .text-right   { text-align:right }
@@ -58,8 +57,6 @@ address { font-style:normal }
 
 .icon-date::before  { content:"\1F4C5";font-size:medium;padding-right:4px }
 .icon-label::before { content:"\1F3F7";font-size:medium;padding-right:4px }
-
-article.with-h1 > h1 { font-size:x-large }
 
 .toc ol, .toc ul { font-size:large;list-style-type:square;padding-inline-start:20px;margin:0 }
 
@@ -132,6 +129,7 @@ p > code {
 /* Syntax highlighting */
 code span.gh { color: var(--color-blue-2) }
 code span.gu { color: var(--color-blue-2) }
+code span.p { color: var(--color-orange-1) }
 
 /* Quote */
 blockquote {
@@ -159,4 +157,22 @@ a:active {
 /* Image */
 img {
     max-width: 100%
+}
+
+/* Breadcrumbs */
+nav.breadcrumbs {
+    font-size: small;
+    padding-top: var(--spacing-md);
+}
+nav > ul {
+    list-style-type: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+nav > ul > li {
+    display: inline
+}
+nav > ul > li + li::before {
+    content: "»\00A0";
 }

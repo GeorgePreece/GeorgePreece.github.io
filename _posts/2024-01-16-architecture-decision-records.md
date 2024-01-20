@@ -4,7 +4,7 @@ layout: "article"
 title: "Architecture Decision Records"
 description: "Explore the role of Architecture Decision Records (ADRs) in Agile development, as they guide key architectural decisions"
 author: "George Preece"
-category: article
+category: articles
 tags: architecture
 ---
 

@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "template"
 
 title:  "Home"
 description: A blog on software architecture, development and security
@@ -24,13 +24,13 @@ description: A blog on software architecture, development and security
 <div>
     <header class="text-center margin-vert">
         <img alt="Avatar" src="images/avatar.jpeg" width="256" height="256" 
-            style="border-radius:4px;box-shadow:0 0 4px #3333" />
+             style="border-radius:4px;box-shadow:0 0 4px #3333" />
     </header>
 
     <div class="margin-horz text-justify">
         <address class="text-center margin-vert">
             {% for link in site.links %}
-            <a class="line-spacing" href="{{ link.value }}" target="_blank" rel="noopener">{{ link.label }}</a>
+            <a href="{{ link.value }}" target="_blank" rel="noopener">{{ link.label }}</a>
             {% if forloop.last == false %}<br />{% endif %}
             {% endfor %}
         </address>
