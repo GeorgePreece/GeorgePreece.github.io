@@ -22,7 +22,7 @@ In Agile development, we strive to favour working software over comprehensive do
 When we create an ADR, we capture not just the decision, but the **motivation**. I love using this word — motivation — to describe an ADR. It emphasises the "why" behind the decision. How many times have you worked on a system and found yourself wondering, "Why on earth was it designed this way?" That moment of perplexity is exactly what an ADR aims to prevent. This understanding will also support future decisions and onboarding new engineers.
 
 ### Architectural Significance
-ADRs typically address Architecturally Significant Requirements (ASRs). ASRs are the critical, non-negotiable elements that influence our system's architecture. One challenge here is that "significant" can be subjective, which oftens lead to misalignment within project teams. Consequently, this may result in either the creation of too many records or too few; therefore, team alignment on this aspect is crucial. 
+ADRs typically address Architecturally Significant Requirements (ASRs). ASRs are the critical, non-negotiable elements that influence our system's architecture. One challenge here is that "significant" can be subjective, which often leads to misalignment within project teams. Consequently, this may result in either the creation of too many records or too few; therefore, team alignment on this aspect is crucial. 
 
 Nygard defined "architecturally-significant" decisions as those that affect the: 
 - **structure** such as defining layers or deciding between distributed or monolithic systems. These decisions often impact the overall layout, organisation and communication within a system.
